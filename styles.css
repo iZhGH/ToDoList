@@ -68,7 +68,7 @@ body {
 
 .todo {
   padding: 10px;
-  height: 75px;
+  min-height: 75px;
   color: black;
   background-color: #ECDFCC;
   border-radius: 5px;
@@ -81,6 +81,7 @@ body {
 }
 
 .todoBottom {
+  margin-top: 10px;
   
 }
 
