@@ -77,8 +77,41 @@ body {
 .todoTop {
   display: flex;
   gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.todoBottom {
+  
 }
 
 .todoName {
-  margin-right: 350px;
+  margin-right: auto;
+  white-space: no-wrap;
+}
+
+.todoEdit {
+  border-radius: 3px;
+  padding: 10px;
+  background-color: #998e7c;
+  color: black;
+  cursor: pointer;
+}
+
+.todoDelete {
+  border-radius: 3px;
+  padding: 10px;
+  background-color: #998e7c;
+  color: black;
+  cursor: pointer;
+}
+
+.todoDelete:hover {
+  background-color: red;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+.todoEdit:hover {
+  background-color: #6c655a;
+  transition-duration: 0.5s;
 }
