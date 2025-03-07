@@ -34,11 +34,17 @@ body {
 .projects {
   display: flex;
   list-style: none;
+  cursor: pointer;
+}
+
+.project:hover {
+  color: white;
+  transition-duration: 0.5s;
 }
 
 .project {
   padding:5px; 
-  border-right: 1.5px solid;
+  border-right: 1.5px solid black;
 }
 
 
