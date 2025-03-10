@@ -27,8 +27,9 @@ class toDo {
 }
 
 const render = (function() {
-    let list = projects.getProjects();
+    
     function renderProjects() {
+        let list = projects.getProjects();
         for (let i = 0; i < list.length; i++) {
             let renderedProject = document.createElement("li");
             renderedProject.textContent = `${list[i]}`;
