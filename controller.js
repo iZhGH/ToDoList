@@ -1,16 +1,4 @@
-const render = (function() {
-    function renderProjects() {
-
-    }
-
-    
-
-    return {renderProjects}
-
-})();
-
-
-
+let projectsParentElement = document.querySelector(".projects");
 
 const projects = (function() {
     let projectList = ["all"];
@@ -37,3 +25,24 @@ class toDo {
     }
 
 }
+
+const render = (function() {
+    let list = projects.getProjects();
+    function renderProjects() {
+        for (let i = 0; i < list.length; i++) {
+            let renderedProject = document.createElement("li");
+            renderedProject.textContent = `${list[i]}`;
+            renderedProject.classList.add("project");
+            projectsParentElement.appendChild(renderedProject);
+        }
+
+    }
+
+
+
+    return {renderProjects}
+
+})();
+
+projects.addProjects("Training");
+render.renderProjects();
