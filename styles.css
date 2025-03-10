@@ -116,6 +116,20 @@ body {
     cursor: pointer;
 }
 
+.addButton {
+    border-radius: 3px;
+    margin-top: 15px;
+    padding: 5px;
+    background-color: #ECDFCC;
+    color: black;
+    cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: grey;
+  font-size: 20px;
+  transition-duration: 0.5s;
+}
 .todoDelete:hover {
   background-color: red;
   color: white;
