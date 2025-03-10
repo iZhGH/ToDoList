@@ -3,7 +3,7 @@ let addBtn = document.querySelector(".addButton");
 // Grab parent element for ToDos (the board)
 
 
-// addBtn.addEventListener('click', toDo.addToDo());
+// addBtn.addEventListener('click', toDoHandler.addToDo());
 
 const projects = (function() {
     let projectList = ["All"];
@@ -32,9 +32,7 @@ class toDo {
     }
 }
  
-const toDo = (function() {
-    
-
+const toDoHandler = (function() {
     function addToDo() {
         // Ask a bunch of questions
         // Push answers into toDo array as object with K/V's
