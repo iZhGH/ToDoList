@@ -1,7 +1,10 @@
 let projectsParentElement = document.querySelector(".projects");
+let addBtn = document.querySelector(".addButton");
+
+// addBtn.addEventListener('click', addToDo());
 
 const projects = (function() {
-    let projectList = ["all"];
+    let projectList = ["All"];
 
     function getProjects() {
         return projectList;
@@ -16,15 +19,20 @@ const projects = (function() {
     return {getProjects, addProjects}
 })();
  
-class toDo {
-    constructor(title, description, dueDate, priority) {
-        this.title = title;
-        this.description = description;
-        this.dueDate = dueDate;
-        this.priority = priority;
-    }
+const toDo = (function() {
+    toDoList = [
+        {
+            "title":"Test Title",
+            "description": "Test description",
+            "dueDate": "Test Date",
+            "Priority": "Immediate"
+        }
 
-}
+    ]
+
+
+
+})();
 
 const render = (function() {
     
@@ -39,11 +47,13 @@ const render = (function() {
 
     }
 
+    function renderToDo() {
 
+    }
 
-    return {renderProjects}
+    return {renderProjects, renderToDo}
 
 })();
 
-projects.addProjects("Training");
+//projects.addProjects("Training");
 render.renderProjects();
