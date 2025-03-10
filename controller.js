@@ -25,10 +25,15 @@ const toDo = (function() {
             "title":"Test Title",
             "description": "Test description",
             "dueDate": "Test Date",
-            "Priority": "Immediate"
+            "Priority": "Immediate",
+            "includedIn":  ["All"]
         }
 
     ]
+
+    function addToDo() {
+
+    }
 
 
 
