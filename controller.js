@@ -1,3 +1,17 @@
+const render = (function() {
+    function renderProjects() {
+
+    }
+
+    
+
+    return {renderProjects}
+
+})();
+
+
+
+
 const projects = (function() {
     let projectList = ["all"];
 
